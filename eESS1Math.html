@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MODERN CHAMPIONS ACADEMY</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style2.css" />
+
+
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .question { margin-top: 20px; }
+    #quiz, #result { display: none; }
+    hr { border: none; height: 2px; background-color: rgb(185, 179, 179); margin: 20px 0; }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <img src="logo.png" alt="Logo" class="logo1">
+  </header>
+
+
+  <div style="background-image: url('E-ExamBackground2.jpg');">
+  <h1 class = "Topic">MY<br>MODERN<br>CHAMPIONS<br>ACADEMY<br>SS1<br>MATHEMATICS<br>THIRD<br>TERM<br>E-EXAM</h1>
+
+
+   
+  <div class = "Student" id="student-form">
+    <br>
+    
+    <label>NAMES:</label><br><input class = "input1"  type = "text" id="name"   required  value = "Rosemary Ukebue"  ><br>
+    <label>AGE:</label><br> <input class = "input" type="number" id="age"  required ><br><br>
+    <label>GENDER:</label><br> <input class = "input"type="text" id="gender" required   Value = "Male"></label><br><br>
+    <label>CLASS:</label><br> <input class = "input"type="text" id="class" required Value ="SS3"></label><br><br><br><hr>
+    <button class = "button5" onclick="startQuiz()">Start Quiz</button>
+    <br><hr>
+
+  
+    
+    
+  </div>
+
+
+  <nav class = "nav2">
+    <br>
+    <br>
+    <br>  
+    <br>
+
+    <p class="Timer9">Time left: <span id="timer">05:00</span></p>
+    
+    
+  </nav>
+
+  <div  class = "questions"id="quiz">
+
+
+    <form class = "questions" id="quizForm">
+      <div class="question">
+        <p>1. Which Of The Following Is a Prime Number ?</p>
+        <label><input type="radio" name="q1" value="A"> A. 15</label><br>
+        <label><input type="radio" name="q1" value="B"> B. 10</label><br>
+        <label><input type="radio" name="q1" value="C"> C. 6</label><br>
+        <label><input type="radio" name="q1" value="D"> D. 1</label>
+      </div>
+<hr>
+      <div class="question">
+        <p>2. What is 5 x 6 ?</p>
+        <label><input type="radio" name="q2" value="A"> A. 30</label><br>
+        <label><input type="radio" name="q2" value="B"> B. 25</label><br>
+        <label><input type="radio" name="q2" value="C"> C. 20</label><br>
+        <label><input type="radio" name="q2" value="D"> D. 35</label>
+      </div>
+<hr>
+      <div class="question">
+        <p>3. What is 30 Divided By 5 ?</p>
+        <label><input type="radio" name="q3" value="A"> A. 5</label><br>
+        <label><input type="radio" name="q3" value="B"> B. 6</label><br>
+        <label><input type="radio" name="q3" value="C"> C. 7</label><br>
+        <label><input type="radio" name="q3" value="D"> D. 8</label>
+      </div>
+<hr>
+      <div class="question">
+        <p>4. Which Is 2 Plus 3 ?</p>
+        <label><input type="radio" name="q4" value="A"> A. 1</label><br>
+        <label><input type="radio" name="q4" value="B"> B. 3</label><br>
+        <label><input type="radio" name="q4" value="C"> C. 5</label><br>
+        <label><input type="radio" name="q4" value="D"> D. 7</label>
+      </div>
+<hr>
+      <div class="question">
+        <p>5. Express As a Deciaml 1/2 ?</p>
+        <label><input type="radio" name="q5" value="A"> A. 0.7</label><br>
+        <label><input type="radio" name="q5" value="B"> B. 0.6</label><br>
+        <label><input type="radio" name="q5" value="C"> C. 0.5</label><br>
+        <label><input type="radio" name="q5" value="D"> D. 0.4</label>
+      </div>
+<hr>
+      
+      <button class = "button5"type="button" onclick="submitQuiz()">Submit</button>
+
+      <br>
+      <br>
+    </form>
+  </div>
+
+  <div class = "Result2"id="result"></div>
+
+  <script>
+    let timer;
+    let timeLeft = 300;
+
+    const questions = 
+    {
+      q1: { text: "1. Which Of The Following Is a Prime Number ?", correct: "D", options: { A: "15", B: "10", C: "6", D: "1" } },
+      q2: { text: "2. What is 5 x 6 ?", correct: "A", options: { A: "30", B: "25", C: "20", D: "35" } },
+      q3: { text: "3. What is 30 Divided By 5 ?", correct: "B", options: { A: "5", B: "6", C: "7", D: "8" } },
+      q4: { text: "4. Which Is 2 Plus 3 ?", correct: "C", options: { A: "1", B: "3", C: "5", D: "7" } },
+      q5: { text: "5. Express As a Deciaml 1/2 ?", correct: "C", options: { A: "0.7", B: "0.6", C: "0.5", D: "0.4" } }
+    };
+
+    function startQuiz() {
+      document.getElementById("student-form").style.display = "none";
+      document.getElementById("quiz").style.display = "block";
+      startTimer();
+    }
+
+    function startTimer() {
+      timer = setInterval(() => {
+        timeLeft--;
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        document.getElementById("timer").textContent = `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+        if (timeLeft <= 0) {
+          clearInterval(timer);
+          submitQuiz();
+        }
+      }, 1000);
+    }
+
+    function submitQuiz() {
+      clearInterval(timer);
+      const form = document.forms["quizForm"];
+      let score = 0;
+      let resultDetails = "";
+
+      for (let q in questions) {
+        const userAnswer = form[q].value;
+        const correctAnswer = questions[q].correct;
+        const status = userAnswer === correctAnswer ? "Correct" : "Wrong";
+        if (status === "Correct") score++;
+
+        resultDetails += `
+${questions[q].text}
+Your Answer: ${userAnswer ? questions[q].options[userAnswer] : "No Answer"} - ${status}
+${status === "Wrong" ? `Correct Answer: ${questions[q].options[correctAnswer]}` : ""}
+\n`;
+      }
+
+      const name = document.getElementById("name").value.trim();
+      const gender = document.getElementById("gender").value.trim();
+      const age = document.getElementById("age").value.trim();
+      const studentClass = document.getElementById("class").value.trim();
+
+      const resultText = `Student Quiz Result
+
+Name: ${name}
+Gender: ${gender}
+Age: ${age}
+Class: ${studentClass}
+Score: ${score} Out Of 5
+
+${resultDetails}`;
+
+      document.getElementById("quiz").style.display = "none";
+      document.getElementById("result").style.display = "block";
+      document.getElementById("result").innerHTML = `
+        <h2>STUDENT QUIZ RESULT</h2>
+        <pre>${resultText}</pre>
+        <button class = "button6"onclick="downloadResult()">Download Result as Text</button>
+      `;
+
+      window.downloadResult = function () {
+        const blob = new Blob([resultText], { type: "text/plain" });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = `${name.replace(/ /g, "_")}_Quiz_Result.txt`;
+        link.click();
+      };
+    }
+
+    window.onload = function () {
+      document.getElementById("name").value = "";
+      document.getElementById("gender").value = "";
+      document.getElementById("age").value = "";
+      document.getElementById("class").value = "";
+      document.getElementById("quizForm").reset();
+      document.getElementById("quiz").style.display = "none";
+      document.getElementById("result").style.display = "none";
+      document.getElementById("result").innerHTML = "";
+      timeLeft = 300;
+      clearInterval(timer);
+      document.getElementById("timer").textContent = "05:00";
+    };
+  </script>
+
+
+  
+</body>
+</html>
