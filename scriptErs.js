@@ -36,8 +36,8 @@
        "wtg45":"ercS2024Kg1EkenePrinceOkafor.html",
        "qgh45":"ercS2024Kg1MmesomaJanelleOnwuchekwa.html",
        "2zq7g":"ercS2024Kg1CharlesChukwumaUzor.html", 
-
-
+       "nax37":"ercS2024Nur1SelborEmmanuelBinfa.html", 
+       "76qcx":"ercS2024Nur1OluwaferanmiMaxwellFaniyi.html", 
 
        
 
@@ -213,7 +213,7 @@
        "474cd":"ercS2024Basic3MatthewRekpemeIrem.html",
        "f27dr":"ercS2024Basic3ChisomSlyviaOkoli.html",
        "8pz8c":"ercS2024Basic3ChigimdiFavourOnuorha.html",
-
+       "7xqzg":"ercS2024Basic3OluwasemiloreJeremiahFaniyi.html",
 
 
 
@@ -353,7 +353,7 @@
       // Check credentials
       if (passwords[passwordInput]) {
         window.location.href = passwords[passwordInput];
-        alert(" Your N1,100 Expires\ 60 Days From\n 2025 - July - 18\n That Is\n 2025 - Sept - 16");
+        alert("Expires\ 60 Days From\n 2025 - July - 18\n That Is\n 2025 - Sept - 16\nWelcome!!!");
       } else {
         attempts--;
         localStorage.setItem("attempts", attempts);
