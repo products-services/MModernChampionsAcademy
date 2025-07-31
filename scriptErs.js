@@ -36,8 +36,7 @@
        "wtg45":"ercS2024Kg1EkenePrinceOkafor.html",
        "qgh45":"ercS2024Kg1MmesomaJanelleOnwuchekwa.html",
        "2zq7g":"ercS2024Kg1CharlesChukwumaUzor.html", 
-       "nax37":"ercS2024Nur1SelborEmmanuelBinfa.html", 
-       "76qcx":"ercS2024Nur1OluwaferanmiMaxwellFaniyi.html", 
+
 
        
 
@@ -98,7 +97,8 @@
        "5s9jr":"ercS2024Nur1SharonAbiolaIgbinlola.html",
        "59v5j":"ercS2024Nur1ChukwudiegwuGospelIkeme.html",
        "2rztq":"ercS2024Nur1UgochukwuProsperEzechukwugoziri.html",  
-
+       "nax37":"ercS2024Nur1SelborEmmanuelBinfa.html", 
+       "76qcx":"ercS2024Nur1OluwaferanmiMaxwellFaniyi.html", 
        
        
   
@@ -353,7 +353,7 @@
       // Check credentials
       if (passwords[passwordInput]) {
         window.location.href = passwords[passwordInput];
-        alert(" Expires\ 60 Days From\n 2025 - July - 18\n That Is\n 2025 - Sept - 16\n Welcome!!!");
+        alert(" Expires\ 60 Days From\n 2025 - July - 18\n That Is\n 2025 - Sept - 16\n Welcome !!!");
       } else {
         attempts--;
         localStorage.setItem("attempts", attempts);
