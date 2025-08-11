@@ -7,6 +7,7 @@ body {
 {
 
    color: rgb(0, 0,255);
+   text-align: center;
 }
 
 
@@ -72,6 +73,18 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+.titletitle
+{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.titletitletitle
+{
+text-align: center;
 }
 
 
