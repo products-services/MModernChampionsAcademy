@@ -121,14 +121,14 @@ header {
 
 .bbody {
 
-    font: 2em Arial;
+    font: 2em ;
     font-size: 35px;
     text-align: center;
     padding: 7px;
   }
   
   .bbody2{
-    font: 2em Fredoka;
+    
     font-size: 25px;
     text-align: center;
     padding: 7px;
@@ -137,7 +137,7 @@ header {
 
   .bbody3
 {
-    font: 2em Fredoka;
+    
     font-size: 30px;
     text-align: center;
     padding: 7px;
@@ -308,7 +308,7 @@ header {
 }
 
 .bbody2{
-  font: 2em Fredoka;
+  
   font-size: 25px;
   text-align: center;
   padding: 7px;
@@ -317,7 +317,7 @@ header {
 
 .bbody3
 {
-    font: 2em Fredoka;
+    
     font-size: 30px;
     text-align: center;
     padding: 7px;
@@ -604,14 +604,14 @@ body {
 
 .bbody {
 
-  font: 2em Arial;
+  
   font-size: 35px;
   text-align: center;
   padding: 7px;
 }
 
 .bbody2{
-  font: 2em Fredoka;
+  
   font-size: 25px;
   text-align: center;
   padding: 7px;
@@ -620,7 +620,7 @@ body {
 
 .bbody3
 {
-    font: 2em Fredoka;
+    
     font-size: 30px;
     text-align: center;
     padding: 7px;
@@ -1175,14 +1175,14 @@ body {
 
 .bbody {
 
-  font: 2em Arial;
+  font: 2em ;
   font-size: 35px;
   text-align: center;
   padding: 7px;
 }
 
 .bbody2{
-  font: 2em Fredoka;
+  
   font-size: 25px;
   text-align: center;
   padding: 7px;
@@ -1191,7 +1191,7 @@ body {
 
 .bbody3
 {
-    font: 2em Fredoka;
+    
     font-size: 30px;
     text-align: center;
     padding: 7px;
