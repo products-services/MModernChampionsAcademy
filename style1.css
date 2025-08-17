@@ -191,7 +191,20 @@ header {
 
 .button5{
    color: rgb(241, 21, 175);
-    width : 210px;
+    width : 235px;
+    font-size: 23px;
+    text-align: center;
+    background-color:rgb(246, 235, 31);
+    margin-top: 10px;
+
+
+    
+
+}
+
+.button1{
+    color: rgb(10, 171, 55);
+    width : 235px;
     font-size: 23px;
     text-align: center;
     background-color:rgb(246, 235, 31);
@@ -258,18 +271,7 @@ header {
 
 }
 
-.button1{
-    color: rgb(10, 171, 55);
-    width : 210px;
-    font-size: 23px;
-    text-align: center;
-    background-color:rgb(246, 235, 31);
-    margin-top: 10px;
 
-
-    
-
-}
 
 .button6{
     color: rgb(10, 171, 55);
