@@ -239,6 +239,23 @@ header {
 
 }
 
+
+.button5{
+    color: rgb(41, 27, 235);
+    width : 210px;
+    font-size: 23px;
+    text-align: center;
+    background-color:rgb(231, 241, 232);
+    margin-top: 10px;
+
+
+    
+
+}
+
+
+
+
 .button6{
     color: rgb(10, 171, 55);
     width : 210px;
