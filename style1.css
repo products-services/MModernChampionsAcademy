@@ -135,7 +135,7 @@ header {
     background: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
 }
 
 .bbody {
@@ -541,7 +541,7 @@ nav .icon-burger .line {
         flex-direction: column;
         justify-content: space-evenly;
     
-        background-color: rgba(10, 171, 55);
+        background-color: rgb(10, 171, 55);
         overflow: hidden;
         box-sizing: border-box;
         transition: all .5s ease-in-out;
@@ -588,7 +588,7 @@ nav .icon-burger .line {
         height: auto;
         flex-direction: column;
         justify-content: space-evenly;
-        background-color: rgba(226, 241, 6);
+        background-color: rgb(226, 241, 6);
         overflow: hidden;
         box-sizing: border-box;
         transition: all .5s ease-in-out;
@@ -839,7 +839,7 @@ nav .icon-burger .line {
         flex-direction: column;
         justify-content: space-evenly;
     
-        background-color: rgba(226, 241, 6);
+        background-color: rgb(226, 241, 6);
         overflow: hidden;
         box-sizing: border-box;
         transition: all .5s ease-in-out;
@@ -886,7 +886,7 @@ nav .icon-burger .line {
         height: auto;
         flex-direction: column;
         justify-content: space-evenly;
-        background-color: rgba(226, 241, 6); 
+        background-color: rgb(226, 241, 6); 
         overflow: hidden;
         box-sizing: border-box;
         transition: all .5s ease-in-out;
@@ -1112,7 +1112,7 @@ nav .icon-burger .line {
         flex-direction: column;
         justify-content: space-evenly;
     
-        background-color: rgba(226, 241, 6);
+        background-color: rgb(226, 241, 6);
         overflow: hidden;
         box-sizing: border-box;
         transition: all .5s ease-in-out;
@@ -1159,7 +1159,7 @@ nav .icon-burger .line {
         height: auto;
         flex-direction: column;
         justify-content: space-evenly;
-        background-color: rgba(226, 241, 6);
+        background-color: rgb(226, 241, 6);
         overflow: hidden;
         box-sizing: border-box;
         transition: all .5s ease-in-out;
@@ -1397,7 +1397,7 @@ nav .icon-burger .line {
         flex-direction: column;
         justify-content: space-evenly;
     
-        background-color: rgba(226, 241, 6);
+        background-color: rgb(226, 241, 6);
         overflow: hidden;
         box-sizing: border-box;
         transition: all .5s ease-in-out;
@@ -1444,7 +1444,7 @@ nav .icon-burger .line {
         height: auto;
         flex-direction: column;
         justify-content: space-evenly;
-        background-color: rgba(226, 241, 6); 
+        background-color: rgb(226, 241, 6); 
         overflow: hidden;
         box-sizing: border-box;
         transition: all .5s ease-in-out;
