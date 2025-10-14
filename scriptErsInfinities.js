@@ -371,7 +371,7 @@
       // Check credentials
       if (passwords[passwordInput]) {
         window.location.href = passwords[passwordInput];
-        alert(" Expires\ 60 Days From\n 2025 - July - 18\n That Is\n 2025 - Sept - 17:11:59:59PM\n Extended For Another 60 days\n Expires 2025 - Nov -17-11:59PM\n Welcome !!!");
+        alert(" Welcome !!!");
       } else {
         attempts--;
         localStorage.setItem("attempts", attempts);
