@@ -32,6 +32,25 @@
       "ww8fg": "ercES2026Nur2ChimbusommaEmmanuellaOkolo.html",
       "9c2f3": "ercES2026Basic3WisdomJulius.html",
       "dv7yt": "ercES2026Jss1MayorChibikeMacaulay.html",
+
+
+      "cax5r":"ercES2024Basic3KelliOsinachiMacauley.html",
+      "g2u3g":"ercES2026Jss1JoshuaChikaimaUchenna.html",
+      "4d9bu":"ercES2026Basic3KamsiyonnaAdaugoUchenna.html",
+      "e2mn4":"ercES2026Basic1ChizaramChistabelOnyia.html",
+      "tmc9t":"ercES2026Basic5SarahMicheal.html",
+      "5huqz":"ercES2026Nur2EzekielNwabongBitrus.html",
+      "2sr3d":"ercES2026Jss3ChinenyeEstherTitus.html",
+      "c78n7":"ercES2026Basic2SufficientJulius.html",
+      "pp866":"ercES2026Jss1MunachiMirabelNwachukwu.html",
+      "53qma":"ercES2026Basic4EmmanuelYuknwiBitrus.html",
+      "nix99":"ercES2026Basic5EmmanuellaNfonnmiBitrus.html",
+      "4p59z":"ercES2026Basic1ChigozieEmmanuel.html",
+      "fs2nk":"ercES2026Basic3DianaMicheal.html",
+      "ynxf4":"ercES2026Basic5OnyinyechuwuGiftOssai.html",
+
+
+
       
 
 
@@ -376,7 +395,7 @@
       // Check credentials
       if (passwords[passwordInput]) {
         window.location.href = passwords[passwordInput];
-        alert(" Welcome !!!");
+        alert(" Welcome !!! ");
       } else {
         attempts--;
         localStorage.setItem("attempts", attempts);
